@@ -1,37 +1,38 @@
--- [[ Setting options ]]
--- See `:help vim.o`
+-- [[ stuff I understand ]]
 
+-- relative number
+vim.opt.number = true
+vim.opt.relativenumber = true
 
--- [ Appearance ]
-vim.wo.number = true
-vim.wo.relativenumber = true
--- Set completeopt to have a better completion experience
-vim.o.completeopt = 'menuone,noselect'
--- NOTE: Make sure your terminal supports this
-vim.o.termguicolors = true
-
-
--- [ Behaviour ]
--- Enable mouse mode
-vim.o.mouse = 'a'
--- Enable break indent
-vim.o.breakindent = true
--- Save undo history
-vim.o.undofile = true
--- Decrease update time
-vim.o.updatetime = 250
-vim.o.timeoutlen = 300
--- Keep signcolumn on by default
-vim.wo.signcolumn = 'yes'
 -- indentation
-vim.o.shiftwidth = 4
-vim.o.smarttab = true
-vim.o.expandtab = true
+vim.opt.shiftwidth = 4
+vim.opt.smarttab = true
+vim.opt.expandtab = true
+
+-- wrap/scroll off
+vim.opt.wrap = false
+vim.opt.scrolloff = 8
+vim.opt.colorcolumn = "80"
+
+-- searching
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+
+-- backup/swapfile
+vim.opt.swapfile = false
+vim.opt.backup = false
+
+-- undofile
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undofile = true
 
 
--- [ Searching ]
--- Set highlight on search
-vim.o.hlsearch = false
--- Case-insensitive searching UNLESS \C or capital in search
-vim.o.ignorecase = true
-vim.o.smartcase = true
+-- [[ stuff I don't understand ]]
+
+vim.wo.signcolumn = 'yes'
+vim.opt.completeopt = 'menuone,noselect'
+vim.opt.termguicolors = true
+vim.opt.updatetime = 250
+vim.opt.timeoutlen = 300
