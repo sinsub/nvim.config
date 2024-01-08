@@ -1,8 +1,8 @@
-require('afterplugins.lsp')
-require('afterplugins.telescope')
-require('afterplugins.treesitter')
-require('afterplugins.mason')
-require('afterplugins.cmp')
+require('setup.lsp')
+require('setup.telescope')
+require('setup.treesitter')
+require('setup.mason')
+require('setup.cmp')
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
