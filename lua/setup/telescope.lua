@@ -78,7 +78,6 @@ vim.keymap.set('n', '<leader>gg', ':LiveGrepGitRoot<cr>', { desc = '[G]rep [G]it
 vim.keymap.set('n', '<leader>gw', require('telescope.builtin').grep_string, { desc = '[G]rep current [W]ord' })
 
 -- TODO Check what these builtins do
-
 -- Why?
 vim.keymap.set('n', '<leader>ss', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
