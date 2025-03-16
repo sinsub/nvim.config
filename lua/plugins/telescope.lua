@@ -6,5 +6,12 @@ return {
         vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
         vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
         vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+
+        vim.keymap.set('n', '<leader>/', function()
+            builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
+              winblend = 10,
+              previewer = false,
+            })
+        end, { desc = '[/] Fuzzily search in current buffer' })
     end,
 }
