@@ -17,6 +17,7 @@ vim.opt.relativenumber = true     -- Show relative line numbers
 vim.opt.ignorecase = true         -- Ignore case in searches
 vim.opt.smartcase = true          -- Override ignorecase if search contains uppercase
 vim.opt.incsearch = true          -- Incremental search (highlight matches as you type)
+vim.opt.hlsearch = false          -- disable search highlighting
 
 -- UI Settings
 vim.opt.wrap = false              -- Disable line wrapping
