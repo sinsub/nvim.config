@@ -22,3 +22,12 @@ vim.keymap.set("v", "<leader>y", "\"+y");
 -- <C-c> does not work when inserting with mult-line cursors
 vim.keymap.set("i", "<C-c>", "<Esc>");
 
+-- window navigation through leader
+vim.keymap.set("n", "<leader>h", "<C-w>h");
+vim.keymap.set("n", "<leader>j", "<C-w>j");
+vim.keymap.set("n", "<leader>k", "<C-w>k");
+vim.keymap.set("n", "<leader>l", "<C-w>l");
+vim.keymap.set("n", "<leader>r", "<C-w>r");
+
+-- teminal mode
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>");
