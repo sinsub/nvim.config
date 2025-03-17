@@ -10,7 +10,7 @@ return {
               },
             }
             -- 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-            vim.cmd.colorscheme 'tokyonight-night'
+            vim.cmd.colorscheme 'torte'
         end,
     },
 
