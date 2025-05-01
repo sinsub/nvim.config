@@ -77,7 +77,7 @@ return {
             })
 
             require('mason-lspconfig').setup({
-                ensure_installed = {},
+                ensure_installed = {"lua_ls", "clangd", "jdtls", "pyright", "gopls", "rust_analyzer"},
                 handlers = {
                     -- this first function is the "default handler"
                     -- it applies to every language server without a "custom handler"
